@@ -12,6 +12,7 @@
   --border-gray: #8e8f99;
   --footer-hover: #31d0aa;
   --bg-modal: #fcfcfc;
+  --border-modal: rgba(46, 47, 66, 0.4);
 }
 
 body {
@@ -508,6 +509,14 @@ img {
   background-color: var(--footer-hover);
 }
 
+.subscribe {
+  margin-left: auto;
+}
+
+/* .subscribe-form {
+  display: flex;
+} */
+
 /* ---/footer section--- */
 
 /* Portfolio.html */
@@ -607,6 +616,8 @@ img {
 /* Button */
 
 .hero-btn {
+  min-width: 169px;
+  min-height: 56px;
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -686,7 +697,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
+  padding: 24px;
 
   width: 408px;
   min-height: 576px;
@@ -727,6 +738,200 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal-title {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--title-text-color);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding: 11px;
+  padding-left: 38px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 4px;
+  border-color: var(--border-modal);
+  outline: transparent;
+}
+
+.form-lable-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.modal-agree {
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.form-lable-checkbox span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  fill: transparent;
+  justify-content: center;
+  margin-right: 9px;
+}
+
+.form-checkbox:checked + .form-lable-checkbox span {
+  background-color: var(--btn-hover-color);
+  border-color: var(--btn-hover-color);
+  fill: var(--team-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-inpform-descr-texut:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:hover,
+.form-input:focus + .forn-icon {
+  fill: var(--accent-color);
+}
+
+.form-descr-text:hover,
+.form-descr-text:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.form-descr {
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+
+  color: var(--border-gray);
+}
+
+textarea {
+  resize: none;
+  display: block;
+}
+
+.form-descr-text::placeholder {
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  padding-top: 4px;
+  padding-left: 16px;
+  text-transform: lowercase;
+}
+
+.form-descr-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 4px;
+  border-color: var(--border-modal);
+  outline: transparent;
+}
+
+.form-groop {
+  position: relative;
+}
+.forn-icon {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+}
+
+.lable-wrapper {
+  margin-bottom: 8px;
+}
+
+.lable-wrapper-last {
+  margin-bottom: 16px;
+}
+
+.footer-subscribe-form {
+  margin-left: auto;
+}
+
+.wrapper-check {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 24px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-icon {
+  width: 24px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-btn {
+  display: flex;
+  gap: 16px;
+  min-width: 165;
+  min-height: 40px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 0 auto;
+  border: none;
+
+  color: var(--withe-text);
+  font-weight: 500;
+  background: var(--accent-color);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: var(--btn-hover-color);
+  color: var(--withe-text);
+}
+
+.subscribe-input {
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--title-text-color);
+  padding: 8px 16px;
+  color: var(--withe-text);
+  min-width: 264px;
+  height: 40px;
+  outline: transparent;
+}
+
+.subscribe-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--withe-text);
 }
 
 /* 

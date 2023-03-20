@@ -402,18 +402,100 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="footer-subscribe-form">
+                <p class="footer-social-text">Subscribe</p>
+                <form class="footer-form">
+                    <input type="email" class="subscribe-input" name="email" placeholder="E-mail" />
+                    <button type="submit" class="footer-btn">
+                        Subscribe
+                        <svg class="subscribe-icon" width="24" heigh="20">
+                            <use href="./images/icons/symbol-modal-check.svg#icon-icon-fly"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
         </div>
     </footer>
     <!--/footer section-->
 
     <!-- MODAL -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal">
             <button type="button" data-modal-close class="modal-close">
                 <svg class="modal-close-svg" width="8" height="8">
                     <use href="./images/icons/symbol-modal-close.svg#icon-close-black"></use>
                 </svg>
             </button>
+            <h3 class="modal-title">Leave your contacts and we will call you back</h3>
+
+            <form class="modal-form form">
+                <div class="lable-wrapper">
+                    <label for="name" class="modal-label">
+                        <span class="form-descr">Name</span>
+                        <div class="form-groop">
+                            <input type="text" name="name" class="form-input" id="name">
+                            <svg class="forn-icon" width="12" height="12">
+                                <use href="./images/icons/symbol-modal-icons.svg#icon-name"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+                <div class="lable-wrapper">
+                    <label for="tel" class="modal-label">
+                        <span class="form-descr">Phone</span>
+                        <div class="form-groop">
+                            <input type="tel" name="tel" class="form-input" id="tel">
+                            <svg class="forn-icon" width="12" height="12">
+                                <use href="./images/icons/symbol-modal-icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+                <div class="lable-wrapper">
+                    <label for="mail" class="modal-label">
+                        <span class="form-descr">Email</span>
+                        <div class="form-groop">
+                            <input type="email" name="mail" class="form-input" id="mail">
+                            <svg class="forn-icon" width="12" height="12">
+                                <use href="./images/icons/symbol-modal-icons.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+
+
+                <div class="lable-wrapper lable-wrapper-last">
+                    <label for="textarea" class="modal-label">
+                        <span class="form-descr">Comment</span>
+                        <textarea name="" id="textarea" cols="" rows="" placeholder="text input"
+                            class="form-descr-text"></textarea>
+                    </label>
+                </div>
+
+                <div class="wrapper-check">
+                    <input type="checkbox" name="checkbox-area" id="checkbox" class="form-checkbox visually-hidden">
+                    <label for="checkbox" class="modal-label form-lable-checkbox">
+                        <span>
+                            <svg class="form-checkbox-item" width="10" height="8">
+                                <use href="./images/icons/symbol-modal-check.svg#icon-Vector-4-1"></use>
+                            </svg>
+                        </span>
+                        <p class="modal-agree">
+                            I accept the terms and conditions of the <a href="">Privacy
+                                Policy</a>
+                        </p>
+
+                    </label>
+                </div>
+
+
+
+                <button type="submit" class="hero-btn">Send </button>
+
+
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
