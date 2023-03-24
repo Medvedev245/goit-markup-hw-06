@@ -669,7 +669,6 @@ img {
 
   height: 100%;
   width: 100%;
-  min-width: 1440px;
 
   left: 0px;
   top: 0px;
@@ -698,6 +697,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 24px;
+  padding-top: 72px;
 
   width: 408px;
   min-height: 576px;
@@ -741,7 +741,7 @@ img {
 }
 
 .modal-title {
-  margin-top: 48px;
+  margin: 0;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -760,6 +760,7 @@ img {
   border-radius: 4px;
   border-color: var(--border-modal);
   outline: transparent;
+  margin-top: 4px;
 }
 
 .form-lable-checkbox {
@@ -784,6 +785,15 @@ img {
   fill: transparent;
   justify-content: center;
   margin-right: 9px;
+}
+
+.form-lable-checkbox p {
+  font-size: 12px;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: 0.04em;
+
+  color: var(--border-gray);
 }
 
 .form-checkbox:checked + .form-lable-checkbox span {
@@ -814,8 +824,13 @@ img {
   font-size: 12px;
   line-height: 1.1;
   letter-spacing: 0.04em;
+  margin-bottom: 4px;
 
   color: var(--border-gray);
+}
+
+.modal-link {
+  color: var(--accent-color);
 }
 
 textarea {
@@ -840,6 +855,7 @@ textarea {
   border-radius: 4px;
   border-color: var(--border-modal);
   outline: transparent;
+  padding: 10px 10px;
 }
 
 .form-groop {
@@ -847,8 +863,9 @@ textarea {
 }
 .forn-icon {
   position: absolute;
-  top: 14px;
   left: 19px;
+  transform: translateY(50%);
+  fill: var(--title-text-color);
 }
 
 .lable-wrapper {
@@ -866,7 +883,6 @@ textarea {
 .wrapper-check {
   display: flex;
   align-items: center;
-  gap: 9px;
   margin-bottom: 24px;
 }
 
@@ -884,7 +900,7 @@ textarea {
 .footer-btn {
   display: flex;
   gap: 16px;
-  min-width: 165;
+  min-width: 165px;
   min-height: 40px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -903,7 +919,6 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 8px 24px;
@@ -924,7 +939,6 @@ textarea {
   color: var(--withe-text);
   min-width: 264px;
   height: 40px;
-  outline: transparent;
 }
 
 .subscribe-input::placeholder {
