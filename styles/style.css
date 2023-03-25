@@ -163,6 +163,7 @@ img {
 }
 
 .hero-title {
+  text-align: center;
   width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
@@ -603,12 +604,13 @@ img {
   overflow: auto;
 }
 
-.portfolio-link:hover .heroes-item-text-overlay {
+.heroes-list-link:hover .heroes-item-text-overlay,
+.heroes-list-link:focus .heroes-item-text-overlay {
   transform: translateY(0%);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.heroes-list-link:hover,
+.heroes-list-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -760,7 +762,6 @@ img {
   border-radius: 4px;
   border-color: var(--border-modal);
   outline: transparent;
-  margin-top: 4px;
 }
 
 .form-lable-checkbox {
@@ -856,6 +857,7 @@ textarea {
   border-color: var(--border-modal);
   outline: transparent;
   padding: 10px 10px;
+  margin-top: 4px;
 }
 
 .form-groop {
@@ -895,6 +897,13 @@ textarea {
   width: 24px;
   height: 20px;
   fill: currentColor;
+}
+
+.modal-form-wrapper {
+  display: inline-block;
+  width: 360px;
+  height: 40px;
+  margin-top: 4px;
 }
 
 .footer-btn {
